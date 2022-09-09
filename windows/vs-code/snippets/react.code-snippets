@@ -1,0 +1,131 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "TS arrow component": {
+    "scope": "typescriptreact",
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${Name}:React.FC = () => {",
+      "  return <div>$0</div>;",
+      "};",
+      "",
+      "export default ${Name};"
+    ],
+    "description": "Create a react arrow function component with types"
+  },
+  "JS arrow component": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rafcJS",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${Name} = () => {",
+      "  return <div>$0</div>;",
+      "};",
+      "",
+      "export default ${Name};"
+    ],
+    "description": "Create a react arrow function component"
+  },
+  "useEffect hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "useEffectSnipped",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:// Effect}",
+      "  return () => {",
+      "    ${2:// Cleanup}",
+      "  };",
+      "}, [${3:/* Dependencies */}]);"
+    ],
+    "description": "Create a useEffect hook function"
+  },
+  "useState hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "useStateSnipped",
+    "body": "const [${1:state}, set${1:State}] = useState($2);",
+    "description": "Create a useState hook function"
+  },
+  "useRef hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "useRefSnipped",
+    "body": "const ${1:ref} = useRef(${2:null});",
+    "description": "Create a useRef hook function"
+  },
+  "useMemo hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "useMemoSnipped",
+    "body": "const ${1:name} = useMemo(() => ${2:/* Memo */}, [${3:/* Dependencies */}]);",
+    "description": "Create a useMemo hook function"
+  },
+  "useCallback hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "useCallbackSnipped",
+    "body": [
+      "const ${1:name} = useCallback(() => {",
+      "  ${2:// Callback}",
+      "}, [${3: /* Dependencies */}]);"
+    ],
+    "description": "Create a useMemo hook function"
+  },
+  "TS handle function": {
+    "scope": "typescriptreact",
+    "prefix": "handleFunction",
+    "body": [
+      "const handle${1:Type} = (event: React${2:.EventAndElement}) => {",
+      "  ${3:// Handle function}",
+      "};"
+    ],
+    "description": "Create a handle function"
+  },
+  "JS handle function": {
+    "scope": "javascriptreact",
+    "prefix": "handleFunctionJS",
+    "body": [
+      "const handle${1:Type} = (event) => {",
+      "  ${2:// Handle function}",
+      "};"
+    ],
+    "description": "Create a handle function with types"
+  },
+  "styled component": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "csc",
+    "body": "export const ${1:StyledComponent} = styled.${2:element}`$3`;",
+    "description": "Create a styled-component"
+  },
+  "toRem function": {
+    "scope": "css",
+    "prefix": "toRem",
+    "body": "${toRem($1)}",
+    "description": "Call the toRem function"
+  },
+  "getMQ function": {
+    "scope": "css",
+    "prefix": "getMQ",
+    "body": "${getMQ('$1')} {$2}",
+    "description": "Call the getMQ function"
+  },
+  "console.log": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "conlog",
+    "body": "console.log('$1 -->', $1)",
+    "description": "Print to console"
+  },
+}
