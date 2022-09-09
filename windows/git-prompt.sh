@@ -1,0 +1,5 @@
+PS1='\[\033]0;\W `git rev-parse --abbrev-ref HEAD 2> /dev/null`\007\]'
+PS1="$PS1"'\[\e[0;32m\]\w \[\e[0m\]'
+PS1="$PS1"'\[\e[0;35m\]'
+PS1="$PS1"'`git rev-parse --abbrev-ref HEAD 2> /dev/null`'
+PS1="${PS1}"'\[\e[0m\] 🕐 \[\e[0;91m\]\@\n\[\e[0;1;97m\]$ \[\e[0m\]'
