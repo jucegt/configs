@@ -16,6 +16,8 @@ Snippets are reusable pieces of code that you can quickly insert into your codeb
 1. **Copy the Snippets Folder:**
    - Copy the `snippets/` folder to your VS Code user directory.
      - **Windows:** `%APPDATA%\Code\User\snippets`
+     - **macOS:** `$HOME/Library/Application Support/Code/User/snippets`
+     - **Linux:** `$HOME/.config/Code/User/snippets`
 
 2. **Restart VS Code:**
    - Restart Visual Studio Code to load the new snippets.
@@ -27,6 +29,8 @@ The `settings.json` file contains all your personalized settings for your develo
 1. **Copy the settings.json File:**
    - Replace the existing `settings.json` in your VS Code user directory with the one provided in this repository.
      - **Windows:** `%APPDATA%\Code\User\settings.json`
+     - **macOS:** `$HOME/Library/Application Support/Code/User/settings.json`
+     - **Linux:** `$HOME/.config/Code/User/settings.json`
 
 2. **Restart VS Code:**
    - Restart the editor to apply the new settings.
