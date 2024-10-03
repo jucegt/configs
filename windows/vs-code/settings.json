@@ -37,8 +37,10 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
+  "docwriter.hotkey.mac": "⌥ + .",
+  "docwriter.hotkey.windows": "Alt + .",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": false,
@@ -49,6 +51,7 @@
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
+  "editor.linkedEditing": true,
   "editor.renderWhitespace": "all",
   "editor.stickyScroll.enabled": true,
   "editor.suggest.showColors": false,
@@ -64,7 +67,9 @@
   "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "files.associations": { "*tailwind.css": "tailwindcss" },
   "files.exclude": {
+    "**/node_modules": true,
     "node_modules": true,
     "coverage": true,
     ".idea": true,
@@ -72,33 +77,38 @@
     ".swc": true
   },
   "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
   "git.openRepositoryInParentFolders": "never",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettier.singleQuote": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontFamily": "JetBrains Mono, PowerlineSymbols",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash"
-    }
-  },
-  "terminal.integrated.tabs.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "Ayu Mirage",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "fluent-icons",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false
   },
-  "editor.linkedEditing": true,
-  "figma.autocompleteBlocks": true,
-  "workbench.statusBar.visible": false
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.singleQuote": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tailwindCSS.experimental.classRegex": [
+    "\\b\\w*Class\\s*=\\s*['\"]([^'\"]*)['\"]"
+  ],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "JetBrains Mono, PowerlineSymbols",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": { "source": "Git Bash" }
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.statusBar.visible": false,
+  "workbench.colorCustomizations": {},
+  "github.copilot.editor.enableAutoCompletions": true,
+  "explorer.confirmPasteNative": false,
+  "console-ninja.featureSet": "Community",
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.env.windows": {}
 }
