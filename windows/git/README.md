@@ -1,5 +1,7 @@
 # Git Config Files
 
+Here are some common Git configuration files used in Windows environments.
+
 ## [git-prompt.sh](/windows/git/git-prompt.sh)
 
 The `git-prompt.sh` file is a script that enhances the command-line experience when working with Git repositories. It provides customizable and informative displays in the terminal, indicating the current repository state. This script, often used with Bash, shows details like the active branch, uncommitted changes, untracked files, and more. It can also incorporate visual cues such as icons or colors to highlight different aspects. Overall, `git-prompt.sh` enhances Git's command-line interface by visually presenting essential repository information for a more convenient and informative workflow.
@@ -27,3 +29,10 @@ In summary, `.bash_profile` runs when logging in and is suitable for global conf
 ```shell
 ~\
 ```
+
+## Additional Resources
+
+- [Git Prompt Documentation](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+- [Bash Startup Files](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
+- [Customizing Your Shell Prompt](https://wiki.archlinux.org/index.php/Bash/Prompt_customization)
+- [Git Bash on Windows](https://gitforwindows.org/)
