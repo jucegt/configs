@@ -6,7 +6,7 @@ The `git-prompt.sh` file is a script that enhances the command-line experience w
 
 ### git-prompt.sh Location
 
-```
+```shell
 ~\.config\git\
 ```
 
@@ -24,6 +24,6 @@ In summary, `.bash_profile` runs when logging in and is suitable for global conf
 
 ### .bash_profile and .bashrc Location
 
-```
+```shell
 ~\
 ```
