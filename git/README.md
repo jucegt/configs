@@ -44,7 +44,7 @@ In summary, `.bash_profile` runs when logging in and is suitable for global conf
 - **Windows (using Git Bash):**
 
 ```shell
-C:\Users\[YourUser]\.bash_profile
+C:\Users\YourUser\.bash_profile
 C:\Users\YourUser\.bashrc
 ```
 
