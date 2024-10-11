@@ -2,7 +2,7 @@
 
 Here are some common Git configuration files used in Windows environments.
 
-## [git-prompt.sh](/windows/git/git-prompt.sh)
+## [git-prompt.sh](/git/git-prompt.sh)
 
 The `git-prompt.sh` file is a script that enhances the command-line experience when working with Git repositories. It provides customizable and informative displays in the terminal, indicating the current repository state. This script, often used with Bash, shows details like the active branch, uncommitted changes, untracked files, and more. It can also incorporate visual cues such as icons or colors to highlight different aspects. Overall, `git-prompt.sh` enhances Git's command-line interface by visually presenting essential repository information for a more convenient and informative workflow.
 
@@ -20,7 +20,7 @@ The `git-prompt.sh` file is a script that enhances the command-line experience w
 C:\Users\YourUser\.config\git\git-prompt.sh
 ```
 
-## [.bash_profile](/windows/git/.bash_profile) and [.bashrc](/windows/git/.bashrc)
+## [.bash_profile](/git/.bash_profile) and [.bashrc](/git/.bashrc)
 
 The `.bash_profile` and `.bashrc` files are configuration files used by the Bash shell in Unix-like systems to customize the command-line environment.
 
@@ -48,9 +48,57 @@ C:\Users\YourUser\.bash_profile
 C:\Users\YourUser\.bashrc
 ```
 
+## [.gitconfig.aliases](/git/.gitconfig.aliases)
+
+The `.gitconfig.aliases` file is a Git configuration file that contains custom Git aliases. These aliases allow you to create shortcuts for frequently used Git commands, enhancing your workflow efficiency by reducing the amount of typing required.
+
+To use these aliases, **copy the contents of the `.gitconfig.aliases` file and paste them at the end of your `.gitconfig` file**.
+
+### .gitconfig Location
+
+- **Unix/Linux/macOS:**
+
+```shell
+~/.gitconfig
+```
+
+- **Windows (using Git Bash):**
+
+```shell
+C:\Users\YourUser\.gitconfig
+```
+
+## [.bash_aliases](/git/.bash_aliases)
+
+The `.bash_aliases` file is a Bash configuration file used to store command aliases for the shell. These aliases allow you to define shortcuts for longer commands, making it faster and easier to execute frequent or complex commands.
+
+### .bash_aliases Location
+
+- **Unix/Linux/macOS:**
+
+```shell
+~/.bash_aliases
+```
+
+- **Windows (using Git Bash):**
+
+```shell
+C:\Users\YourUser\.bash_aliases
+```
+
+To ensure that your `.bash_aliases` file is loaded, you can source it from your `.bashrc` file by adding the following lines to `.bashrc`:
+
+```bash
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
 ## Additional Resources
 
 - [Git Prompt Documentation](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
 - [Bash Startup Files](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
 - [Customizing Your Shell Prompt](https://wiki.archlinux.org/index.php/Bash/Prompt_customization)
 - [Git Bash on Windows](https://gitforwindows.org/)
+- [Git Aliases Documentation](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+- [Bash Aliases](https://www.gnu.org/software/bash/manual/html_node/Aliases.html)

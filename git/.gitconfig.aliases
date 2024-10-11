@@ -1,0 +1,4 @@
+[alias]
+  undo = reset HEAD~1 --mixed
+  wip = "!git add --all; git commit -m 'WIP'"
+  unwip = "!git reset --soft HEAD~1; git unstage"
