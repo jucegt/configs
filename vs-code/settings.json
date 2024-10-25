@@ -67,7 +67,7 @@
   "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.associations": { "*tailwind.css": "tailwindcss" },
+  "files.associations": { "*.css": "tailwindcss" },
   "files.exclude": {
     "**/node_modules": true,
     "node_modules": true,
